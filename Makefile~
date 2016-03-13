@@ -1,6 +1,6 @@
 clean:
 	rm ./elsarticle-template/*  && rm ./elsarticle-template.zip
-copy:clean
+copy:
 	mv ../chrome_download/elsarticle-template.zip  ./ &&  unzip -d ./elsarticle-template elsarticle-template.zip
 
 add: copy
