@@ -2,10 +2,10 @@ clean-temp:
 	rm  ` ls -a |grep ~$$`
 clean:clean-temp
 	rm ./elsarticle-template/*  && rm ./elsarticle-template.zip
-copy:
+copy:clean
 	mv ../chrome_download/elsarticle-template.zip  ./ &&  unzip -d ./elsarticle-template elsarticle-template.zip
 
-add: 
+add: copy
 	git add -A
 
 commit: add
