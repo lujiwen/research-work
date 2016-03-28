@@ -5,6 +5,8 @@ clean:clean-temp
 copy:
 	mv ../chrome_download/elsarticle-template.zip  ./ &&  unzip -d ./elsarticle-template elsarticle-template.zip
 
+pull:
+	git pull 
 add: 
 	git add -A
 
